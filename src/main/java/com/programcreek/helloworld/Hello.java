@@ -1,8 +1,11 @@
 package com.programcreek.helloworld;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.programcreek.helloworld.services.HelloWorldService;
+
 public class Hello {
+
     @SuppressWarnings("resource")
     public static void main(String[] args) {
 // loading the definitions from the given XML file
@@ -16,5 +19,14 @@ public class Hello {
         service.setName("Spring");
         message = service.sayHello();
         System.out.println(message);
+
+        //DataService dataService = (DataService) context.getBean("dataService");
+        //dataService.run();
+        // In der Klasse DataServiceImpl binden wir
+        //FileDataLoader
+        //MarketDao lesen und schreiben von der DB
+        //DataAggregationService
+        //DataExportService
+        //an
     }
 }
