@@ -6,8 +6,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Mapping {
-    @Id
-    @GeneratedValue
+
     private String isin;
     private String tradeid;
 
