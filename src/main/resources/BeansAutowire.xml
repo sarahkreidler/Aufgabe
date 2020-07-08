@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd"
+       default-init-method="init"
+       default-destroy-method="destroy">
+
+    <context:component-scan base-package="de.kreidler.de.services"/>
+
+    <bean id="dataProcessor" class="de.kreidler.sarah.services.DataProcessorImpl"/>
+
+    <bean id="fileDataLoader" class="de.kreidler.sarah.services.FileDataLoaderImpl"/>
+
+    <bean id="dataAggregationService" class="de.kreidler.sarah.services.DataAggregationServiceImpl"/>
+
+    <bean id="marketDao" class="de.kreidler.sarah.dao.MarketDao"/>
+
+
+
+
+</beans>
